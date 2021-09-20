@@ -10,6 +10,5 @@ namespace Dominio.Interfaces.Genericos
         Task Excluir(T Objeto);
         Task<T> BuscarPorId(int Id);
         Task<List<T>> Listar();
-        Task<bool> ExisteUsuario(string email, string senha, int idade, string celular);
     }
 }

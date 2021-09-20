@@ -1,0 +1,15 @@
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\bin\Debug\net5.0\Dominio.deps.json
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\bin\Debug\net5.0\Dominio.dll
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\bin\Debug\net5.0\ref\Dominio.dll
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\bin\Debug\net5.0\Dominio.pdb
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\bin\Debug\net5.0\Entidades.dll
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\bin\Debug\net5.0\Entidades.pdb
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.csproj.AssemblyReference.cache
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfoInputs.cache
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.AssemblyInfo.cs
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.csproj.CoreCompileInputs.cache
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.csproj.CopyComplete
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.dll
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\ref\Dominio.dll
+E:\Projeto_Asp_Net\API_DDD_2021\Dominio\obj\Debug\net5.0\Dominio.pdb

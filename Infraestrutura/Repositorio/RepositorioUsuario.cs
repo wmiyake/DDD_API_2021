@@ -1,5 +1,6 @@
 ﻿using Dominio.Interfaces;
 using Entidades.Entidades;
+using Entidades.Enums;
 using Infraestrutura.Configuracoes;
 using Infraestrutura.Repositorio.Genericos;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +14,6 @@ namespace Infraestrutura.Repositorio
     {
 
         private readonly DbContextOptions<Contexto> _optionsbuilder;
-
         public RepositorioUsuario()
         {
             _optionsbuilder = new DbContextOptions<Contexto>();
@@ -30,11 +30,11 @@ namespace Infraestrutura.Repositorio
                               Email = email,
                               PasswordHash = senha,
                               Idade = idade,
-                              Celular = celular
+                              Celular = celular,
+                              Tipo = TipoUsuario.Comum
                           });
 
                     await data.SaveChangesAsync();
-
                 }
             }
             catch (Exception)
@@ -43,25 +43,22 @@ namespace Infraestrutura.Repositorio
             }
             return true;
         }
-
-        public async Task<bool> ExisteUsuario(string email, string senha, int idade, string celular)
+        public async Task<bool> ExisteUsuario(string email, string senha)
         {
             try
             {
                 using (var data = new Contexto(_optionsbuilder))
                 {
-                    await data.ApplicationUser
-                        .Where(u => u.Email.Equals(email) && u.PasswordHash.Equals(senha))
-                        .AsNoTracking()
-                        .AnyAsync();
+                    return await data.ApplicationUser.
+                          Where(u => u.Email.Equals(email) && u.PasswordHash.Equals(senha))
+                          .AsNoTracking()
+                          .AnyAsync();
                 }
             }
             catch (Exception)
             {
                 return false;
             }
-
-            
         }
     }
 }
